@@ -20,6 +20,14 @@ const config: GatsbyConfig = {
       theme_color: `#a2466c`,
       display: `standalone`,
       icon: `${__dirname}/src/images/icon.png`,
+      icons: [
+        {
+          src: `${__dirname}/src/images/icon.png`,
+          sizes: `192x192`,
+          type: `image/png`,
+          purpose: "any maskable"
+        },
+      ],
     },
   },
   {

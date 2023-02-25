@@ -1,4 +1,5 @@
 import * as React from 'react'
+import AddToHomeScreen from 'gatsby-plugin-pwainstall'
 import Layout from '../components/layout'
 
 export default function IndexPage() {

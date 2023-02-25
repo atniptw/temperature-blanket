@@ -19,10 +19,10 @@ const config: GatsbyConfig = {
       background_color: `#f7f0eb`,
       theme_color: `#a2466c`,
       display: `standalone`,
-      icon: `${__dirname}/src/images/icon.png`,
+      icon: `./src/images/logo.png`,
       icons: [
         {
-          src: `${__dirname}/src/images/icon.png`,
+          src: `./src/images/logo.png`,
           sizes: `192x192`,
           type: `image/png`,
           purpose: "any maskable"
@@ -35,7 +35,9 @@ const config: GatsbyConfig = {
       options: {
         precachePages: [`/about/`, `/`],
       },
-  }]
+  },
+  `gatsby-plugin-pwainstall`
+]
 };
 
 export default config;

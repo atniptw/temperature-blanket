@@ -10,11 +10,21 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [{
-    resolve: 'gatsby-plugin-manifest',
+    resolve: `gatsby-plugin-manifest`,
     options: {
-      "icon": "src/images/icon.png"
-    }
-  }]
+      name: `Tempestry`,
+      short_name: `Tempestry`,
+      start_url: `/`,
+      background_color: `#f7f0eb`,
+      theme_color: `#a2466c`,
+      display: `standalone`,
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/about/`, `/`],
+      },
+    }]
 };
 
 export default config;

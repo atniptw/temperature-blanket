@@ -1,6 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+  pathPrefix: "/temperature-blanket",
   siteMetadata: {
     title: `Temperature-blanket-app`,
     siteUrl: `https://www.yourdomain.tld`
@@ -18,13 +19,15 @@ const config: GatsbyConfig = {
       background_color: `#f7f0eb`,
       theme_color: `#a2466c`,
       display: `standalone`,
+      icon: `${__dirname}/src/images/icon.png`,
     },
-    {
+  },
+  {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/about/`, `/`],
       },
-    }]
+  }]
 };
 
 export default config;

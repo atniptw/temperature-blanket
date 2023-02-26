@@ -8,7 +8,7 @@ interface props {
 
 export default function PalletteBox({colorCount}: props) {
     return (
-        <div className="flex m-auto">
+        <div className="m-auto grid sm:grid-cols-1 md:grid-cols-5">
             {[...Array(colorCount)].map(() => {
                 return <ColorBox/>
             })}

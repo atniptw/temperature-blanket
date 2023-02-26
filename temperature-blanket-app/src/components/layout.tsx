@@ -14,7 +14,6 @@ export default function Layout({ pageTitle, children }: props) {
     </div>
     <div>
       <main>
-        <h1>{pageTitle}</h1>
         {children}
       </main>
     </div>

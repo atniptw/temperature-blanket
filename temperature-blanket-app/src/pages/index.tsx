@@ -1,17 +1,20 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import PalletteBox from '../components/palletteBox';
+import Pallette from '../components/pallette'
+import Form from '../components/form'
 
 export default function IndexPage() {
   return (
     <>
     <main>
       <Layout pageTitle="Home Page" />
-      <h1 className='text-3xl font-bold underline'>Welcome to Tempestry!</h1>
-      <p>A Temperature Blanket App</p>
+      <h1 className='text-3xl font-bold underline text-center'>Welcome to Tempestry!</h1>
+      <p className='text-center'>A Temperature Blanket App</p>
     </main>
-    <div>
-      <PalletteBox colorCount={10}/>
+    <Form/>
+    <Pallette/>
+    <div className="flex justify-center">
+      <button className="mt-4 mb-4 border p-4 bg-[#323176] rounded-full hover:bg-pink-800 text-white font-bold">Start Knitting!</button>
     </div>
     </>
   )

@@ -1,6 +1,6 @@
 import * as React from 'react'
-import ColorBox from '../components/colorBox';
 import Layout from '../components/layout'
+import PalletteBox from '../components/palletteBox';
 
 export default function IndexPage() {
   return (
@@ -11,7 +11,7 @@ export default function IndexPage() {
       <p>A Temperature Blanket App</p>
     </main>
     <div>
-      <ColorBox />
+      <PalletteBox colorCount={10}/>
     </div>
     </>
   )

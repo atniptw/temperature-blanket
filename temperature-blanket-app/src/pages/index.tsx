@@ -1,13 +1,19 @@
 import * as React from 'react'
+import ColorBox from '../components/colorBox';
 import Layout from '../components/layout'
 
 export default function IndexPage() {
   return (
+    <>
     <main>
       <Layout pageTitle="Home Page" />
       <h1 className='text-3xl font-bold underline'>Welcome to Tempestry!</h1>
       <p>A Temperature Blanket App</p>
     </main>
+    <div>
+      <ColorBox />
+    </div>
+    </>
   )
 }
 

@@ -36,6 +36,15 @@ const config: GatsbyConfig = {
         precachePages: [`/about/`, `/`],
       },
   },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      path:`./src/images`,
+    },
+  },
+  `gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-sharp`,
   `gatsby-plugin-pwainstall`
 ]
 };

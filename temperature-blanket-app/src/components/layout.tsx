@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import Navbar from './navbar';
 
 interface props {
     pageTitle: string
@@ -8,21 +8,16 @@ interface props {
 
 export default function Layout({ pageTitle, children }: props) {
   return (
+    <>
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
+      <Navbar/>
+    </div>
+    <div>
       <main>
         <h1>{pageTitle}</h1>
         {children}
       </main>
     </div>
+    </>
   );
 }

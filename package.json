@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "gatsby-image": "^3.11.0",
-    "gatsby-plugin-sharp": "^5.7.0",
-    "gatsby-source-filesystem": "^5.7.0",
-    "gatsby-transformer-sharp": "^5.7.0"
-  }
-}
